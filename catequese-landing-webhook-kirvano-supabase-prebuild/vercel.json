@@ -1,0 +1,15 @@
+{
+  "installCommand": "echo skip",
+  "buildCommand": "echo skip",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
