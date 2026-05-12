@@ -1,0 +1,8 @@
+SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+KIRVANO_WEBHOOK_TOKEN=
+KIRVANO_BASIC_MATCH=Pacote Básico,Dinâmicas para Catequese - Plano Básico
+KIRVANO_COMPLETE_MATCH=Pacote Completo,Dinâmicas para Catequese - Plano Completo
+KIRVANO_365_MATCH=365 Atividades Infantis Bíblicas
+KIRVANO_UNO_MATCH=Uno da Fé
+KIRVANO_LIFETIME_MATCH=Acesso Vitalício,Seu para Sempre
