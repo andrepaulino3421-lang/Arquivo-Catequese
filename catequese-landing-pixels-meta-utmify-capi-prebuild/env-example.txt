@@ -1,0 +1,12 @@
+SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+KIRVANO_WEBHOOK_TOKEN=
+KIRVANO_BASIC_MATCH=Pacote Básico,Dinâmicas para Catequese - Plano Básico
+KIRVANO_COMPLETE_MATCH=Pacote Completo,Dinâmicas para Catequese - Plano Completo
+KIRVANO_365_MATCH=365 Atividades Infantis Bíblicas
+KIRVANO_UNO_MATCH=Uno da Fé
+KIRVANO_LIFETIME_MATCH=Acesso Vitalício,Seu para Sempre
+# Meta Pixel / Conversions API
+# Pixel do Meta usado neste projeto: 1600334731039208
+META_PIXEL_ID=1600334731039208
+META_CAPI_ACCESS_TOKEN=cole_o_token_da_api_de_conversao_da_meta_aqui

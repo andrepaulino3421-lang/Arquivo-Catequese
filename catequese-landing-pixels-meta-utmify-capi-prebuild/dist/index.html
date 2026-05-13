@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catequese Dinâmica - +450 Dinâmicas Prontas</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      window.__META_PIXEL_ID__ = '1600334731039208';
+      window.__META_PAGEVIEW_EVENT_ID__ =
+        'pv_' + Date.now() + '_' + Math.random().toString(16).slice(2);
+
+      fbq('init', window.__META_PIXEL_ID__);
+      fbq('track', 'PageView', {}, { eventID: window.__META_PAGEVIEW_EVENT_ID__ });
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Utmify Pixel Code -->
+    <script>
+      window.pixelId = '6a03e88e68448643247a56ff';
+      var utmifyScript = document.createElement('script');
+      utmifyScript.setAttribute('async', '');
+      utmifyScript.setAttribute('defer', '');
+      utmifyScript.setAttribute('src', 'https://cdn.utmify.com.br/scripts/pixel/pixel.js');
+      document.head.appendChild(utmifyScript);
+    </script>
+    <!-- End Utmify Pixel Code -->
+
+    <!-- Meta Conversions API: PageView server-side deduplicated with browser Pixel -->
+    <script>
+      (function () {
+        function getCookie(name) {
+          var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+          return match ? decodeURIComponent(match[2]) : '';
+        }
+
+        function sendMetaPageView() {
+          try {
+            var payload = {
+              event_name: 'PageView',
+              event_id: window.__META_PAGEVIEW_EVENT_ID__,
+              event_source_url: window.location.href,
+              fbp: getCookie('_fbp'),
+              fbc: getCookie('_fbc'),
+              referrer: document.referrer || '',
+            };
+
+            var body = JSON.stringify(payload);
+            if (navigator.sendBeacon) {
+              navigator.sendBeacon('/api/meta/conversions', new Blob([body], { type: 'application/json' }));
+            } else {
+              fetch('/api/meta/conversions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: body,
+                keepalive: true,
+              }).catch(function () {});
+            }
+          } catch (error) {}
+        }
+
+        if (document.readyState === 'complete') {
+          setTimeout(sendMetaPageView, 350);
+        } else {
+          window.addEventListener('load', function () {
+            setTimeout(sendMetaPageView, 350);
+          });
+        }
+      })();
+    </script>
+    <!-- End Meta Conversions API -->
+    <script type="module" crossorigin src="/assets/index-km8_YK5e.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BXWvPAVc.css">
+  </head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1600334731039208&ev=PageView&noscript=1" /></noscript>
+    <div id="root"></div>
+  </body>
+</html>
+
